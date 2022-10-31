@@ -1,0 +1,173 @@
+* {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+body {
+	background: gray;
+}
+
+/* 
+TITLE 
+*/ 
+.titleDiv {
+	right:0;
+	padding: 20px; 
+	padding-right: 20px;
+	background-color: #DDD;
+	display: block;
+	font-family: Gill Sans Extrabold, monospace;
+	font-size: 20px;
+	font-weight: bold;
+}
+/* 
+SIDE BAR 
+*/
+.sideBar {
+    position: absolute;
+    z-index: 2;
+    top: 63;
+    bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-top: 0;
+    background: #f9f9f9;
+    background-clip: content-box;
+    border-right: 5px solid #f9f9f9;
+    border-left: 5px solid #f9f9f9;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+.sideBarElement {
+	padding: 5px;
+	display: block;
+	width: 140px;
+	padding: 20px;
+	border-bottom: 2px solid black;
+	margin: auto;
+	text-align: center;
+}
+
+.controlBox {
+	padding: 5px;
+	margin: auto;
+	text-align: center;
+}
+
+.sideBarButton {
+	padding: 8px; 
+	background-color: #BFF5F7; 
+	color: black;
+	border: none;
+	border-radius: 5%; 
+	text-transform: uppercase;
+	margin-top: 5px;
+	width: 100%;
+
+}
+/* 
+MAIN SCREEN
+*/
+
+.mainScreen {
+	position: relative;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 1.125rem;
+    font-size: .875rem;
+    pointer-events: auto;
+    display: block;
+    outline: 0;
+    z-index: 1;
+    margin-left: 190px;
+}
+
+.gameBoard {
+	height: 444px;
+	width: 400px;
+	position: relative; 
+	border: 3px solid black; 
+	padding: 5px; 
+	display: block; 
+	background-color: #945200; 
+	margin: auto
+}
+
+.gameScreen {
+	padding: 20px;
+}
+
+
+.infoDiv {
+	right:0;
+	padding: 20px; 
+	padding-right: 20px;
+	background-color: #DDD;
+	width: 500px;
+	margin: auto;
+	display: block;
+	font-family: Gill Sans Extrabold, monospace;
+	font-size: 20px;
+}
+
+.slideScreen {
+	height: 100%; 
+	width: 100%;
+	position: absolute;
+	background: white;
+	top: 0;
+	bottom: 0;
+	left: 100%;
+}
+
+.animateSlide {
+	animation-duration: 1s; 
+	animation-name: slideIn; 
+	animation-fill-mode: forwards;
+}
+
+@keyframes slideIn {
+	from {
+    left: 100%;
+  }
+
+  to {
+    left: 0px;
+  }
+}
+
+.animateSlideOut {
+	animation-duration: 0.5s; 
+	animation-name: slideOut; 
+	animation-fill-mode: forwards;
+}
+
+@keyframes slideOut {
+	from {
+    left: 0%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+#closeRules {
+	width: 200px;
+	height: 40px; 
+	position: absolute;
+	right: 10px;
+	top: 0px;
+}
+
+.titleText {
+
+	margin-top: 10px;
+	width: 100%;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	font-family: monospace;
+}
